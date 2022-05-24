@@ -1,24 +1,28 @@
 fn shadow() {
     // foo is integer
-    // var foo = 1;
-    let foo = 1;
+    let foo = 1; //🐥 var foo = 1;
     println!("{}", foo);
 
     // foo is string
-    // var foo = "foo";
-    let foo = "foo";
+    let foo = "foo"; //🐥 var foo = "foo";
     println!("{}", foo);
-
-    // foo is string
-    let /*mut*/ bar= "bar";
-    // bar = "lol";
-    // ❌ ^^^^^^^^^^^ cannot assign twice to immutable variable
-    println!("{}", bar);
 }
+
+fn mutable() {
+    // foo is mutable string
+    let /*mut*/ foo= "foo"; //🐥 const foo = "foo";
+    println!("{}", foo);
+
+    foo = "lol";
+    // ❌ ^^^^^^^^^^^ cannot assign twice to immutable variable
+    println!("{}", foo);
+}
+
 
 fn borrow() {}
 
 fn main() {
     shadow();
+    mutable();
     borrow();
 }
