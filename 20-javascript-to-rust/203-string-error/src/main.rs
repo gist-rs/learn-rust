@@ -22,13 +22,13 @@ fn example_into() {
 fn example_format() {
     // format!()
     let bar = "bar";
-    let foobar = format!("foo {bar}"); // 🐥 `foo ${bar}`
+    let foobar = format!("foo {bar}"); //🐥 `foo ${bar}`
     println!("foobar = {foobar}");
 }
 
 // Greet function
 fn greet(target: String) {
-    println!("Hello, {}", target); // 🐥 console.log(`Hello, ${target}`);
+    println!("Hello, {}", target); //🐥 console.log(`Hello, ${target}`);
 }
 
 fn main() {
