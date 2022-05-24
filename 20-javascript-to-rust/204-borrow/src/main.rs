@@ -10,7 +10,7 @@ fn shadow() {
 
 fn mutable() {
     // foo is mutable string
-    let /*mut*/ foo= "foo"; //🐥 const foo = "foo";
+    let /*mut*/ foo= "foo"; //🐥 let foo = "foo";
     println!("{}", foo);
 
     foo = "lol";
@@ -19,7 +19,9 @@ fn mutable() {
 }
 
 
-fn borrow() {}
+fn borrow() {
+
+}
 
 fn main() {
     shadow();
