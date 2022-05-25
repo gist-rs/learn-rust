@@ -36,15 +36,18 @@ fn string_convert() {
 }
 
 fn borrow() {
-    // immutable
+    // immutable str
     bar_str("foo");
+
+    // immutable string
     bar_string("foo".to_string());
 
-    // mutable
+    // mutable str
     let mut foo_str = "foo";
     bar_str_mut(&mut foo_str);
     println!("3️⃣ target_str:{}", foo_str);
 
+    // mutable string
     let mut foo_string = "foo".to_owned();
     bar_string_mut( &mut foo_string);
     println!("3️⃣ target_string:{}", foo_string);
