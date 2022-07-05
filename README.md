@@ -9,7 +9,7 @@
 1. 🎮 Feel like fixing bugs: https://github.com/rust-lang/rustlings
 
 # Advance
-1. 
+1. TODO
 
 # Path
 
