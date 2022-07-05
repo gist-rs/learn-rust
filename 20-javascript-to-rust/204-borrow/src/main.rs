@@ -14,7 +14,7 @@ fn mutable() {
     println!("{}", foo);
 
     foo = "lol";
-    // ❌ ^^^^^^^^^^^ cannot assign twice to immutable variable
+    //❌ ^^^^^^^^^^^ cannot assign twice to immutable variable
     println!("{}", foo);
 }
 

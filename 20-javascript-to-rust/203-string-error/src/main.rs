@@ -9,14 +9,14 @@ fn example_to_string() {
     // # to_string()
     // Call greet function that requires a String
     greet("World" /*.to_string()*/);
-    // ❌ expected struct `String`, found `&str`
+    //❌ expected struct `String`, found `&str`
 }
 
 fn example_into() {
     // # into()
     // Convert &str to String
     let foo/*: String*/ = "foo".into();
-    // ❌ ^^^ consider giving `foo` a type
+    //❌ ^^^ consider giving `foo` a type
 }
 
 fn example_format() {
