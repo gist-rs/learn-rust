@@ -25,7 +25,7 @@ rustup install stable
 cargo init
 cargo new
 
-# npm test
+# npm install foo
 cargo install foo
 
 # npm test
