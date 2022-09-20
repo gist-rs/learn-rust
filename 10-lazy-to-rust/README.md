@@ -1,3 +1,7 @@
+# You're too lazy to learn Rust
+
+> Learn Rust with minimal effort, no deep drive, aim to build app/ use lib.
+
 - [ ] hello, println!, macro
 - [ ] str, String
 - [ ] if let
