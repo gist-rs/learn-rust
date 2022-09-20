@@ -1,2 +1,3 @@
 - [ ] context: https://github.com/google/rust-design-faq/blob/main/src/types.md
 - [ ] optional parameters: https://github.com/marioortizmanero/rust-optional-params
+- [ ] error handling: https://www.sheshbabu.com/posts/rust-error-handling/
