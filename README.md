@@ -2,8 +2,8 @@
 
 ## 🦀 Let's learn Rust together!
 
-1. Frontend `Alice` want to build web app. // `main`, todomvc, yew
-1. Backend `Bob` want to build api for Alice. // `lib`, actix
+1. Frontend `Alice` want to build `web app`. // `main`, todomvc, `wasm`, yew, github page
+1. Backend `Bob` want to build `RESTful API` for Alice. // `lib`, actix
 1. React Frontend `Cat` want to build `wasm` to use with `ReactJS`. // `wasm`, `wasm-bindgen`
 1. SmartContract Developer `Dog` want to build smart contract. // `solana`, `anchor`
 1. Artist `Elephant` want to create `NFT`. // `metaplex`, `sugar`
@@ -12,57 +12,91 @@
 1. Platform Owner `Hippo` want to make a subscription model. // `cadinal`
 1. Bot Developer `Iguana` want to build chatbot. // `discord`, `wasm`, `cloudflare`
 1. Data Analyst `Jaguar` want to read price data from oracle. // `Dune`
-1. Data Engineer `Kiwi` want to extract data from contract. // `Pyth`, `explorer`
-1. Data Scientist `Lion` want to build and deploy model. // `tensorflow`, `wasm`
+1. Data Engineer `Kiwi` want to extract data from a contract. // `Pyth`, `explorer`, `metaplex`
+1. Data Scientist `Lion` want to build and deploy model. // `tensorflow`, `wasm`, `PostgresML`
+1. Game Developer // `bevy`, `unreal`
+1. Wasm Developer // `wasmer`, `wasmtime`, `solana-playground`
 
 ## Base
 
-1. Setup: `vscode`, `cargo`, main/lib/workspace.
+1. Setup: `vscode`, `rust-analyzer`, `cargo`, main/lib/workspace.
 1. Hello World: crate, run, debug.
 
 ## R5
 
-1. variable: string, vec, ref, mut.
-1. method: fn, println, json, `serde`.
-1. condition: if, match.
-1. loop: iter, map, filter, collect.
-1. conversions: cast, from, into, try_into, unwrap/?.
-1. error: concept, expect, handling, `anyhow`(main).
+> Basic main, focus on simple and straight forward. // Able to familiar with basic logic
+
+1. variable: str, slice,`string`, `vec`, `usize`, ref, `mut`.
+1. Structs
+1. #[derive(Copy, Clone, Debug, PartialEq)]
+1. method: `fn`, `println`, `json`, `serde`, closures.
+1. condition: `if`, `match`, `if let`, match guards.
+1. Flow of Control: `while`, `loop`, `for`, `range`, `iter`, `map`, `filter`, `collect`.
+1. conversions: `as`, `as_str`, `to_string`, `From`, `into`, `try_into`, `unwrap`/`?`.
+1. error: concept, `panic`, `expect`, `handling`, `anyhow`(main).
+1. test, assert!.
 
 ## R4
 
-1. hashmap, bigint, decimals, `lazy_static`.
-1. method: derive, cast with enum, `serde`, `borsh`, closure.
-1. condition: match, enum.
-1. loop: enumerate, filter_map.
-1. conversions: down casting.
+> Advance main, focus on complex, combine, compose // Able to create todo-mvc app.
+
+1. variable: `OsString`, `OsStr`, `tuples`, `hashmap`, `bigint`, decimals, `lazy_static`.
+1. Generic Structs.
+1. #[repr(C)],`trait`, `imp`.
+1. method: derive, cast with `enum`, `serde`, `borsh`,
+1. condition: match, `enum`, `strum`.
+1. Flow of Control: `enumerate`, `into_iter`, `filter_map`, `flat_map`, `fold`. // Happy case
+1. conversions: `to_owned`, `as_ref`, down casting.
 1. error: handling loop error, `thiserror`(lib).
+1. doc test, cfg(test), allow, feature, package, version.
 
 ## R3
 
-1. lifetime, box, dyn.
-1. custom struct, module, Value, JsValue.
+> Basic lib, Serve cli, focus on app, use existing lib. // Able to use app+ simple lib
+
+1. `CStr`, `CString`, lifetime, `box`, `dyn`, `const`, `regex`.
+1. custom struct, module, `Value`, `JsValue`, `JsError`
+1. Binding with @ Patterns,
 1. async: fetch via `reqwest`, `tokio`.
-1. error: custom error.
-1. wasm: `wasm-bindgen`, via `firebase`, via `cloudflare`.
-1. deploy: `cloud run`, github action.
+1. error: custom error, `map_err`. // Failed case
+1. cli `clap`.
+1. mvp `TODO-MVC`, `yew`, `trunk`.
+1. wasm worker,`cloudflare`, `vanilla-rpc`, `agora-rpc`.
+1. use-web-wasm: `wasm-bindgen`, via `firebase`.
 
 ## R2
 
+> Advance lib, Serve API, Consume as web // Able to create lib
+
 1. rc, arc, refcall, heap, stack.
-1. future.
-1. create `API`.
-1. create `TODO-MVC`.
-1. `solana`: read account, `pyth`.
-1. non-blocking: cloudflare.
+1. future, `spawn_local`, `serde_wasm_bindgen` getter/setter, `IntoWasmAbi`, `FromWasmAbi`.
+1. Subtraits, Type-Associated Functions, Traits That Define Relationships Between Types,
+1. Associated types, Generic Traits , impl Trait, Associated Consts.
+1. Structs with Lifetime Parameters.
+1. advance cargo, optimize, scope, target, workspace,
+1. build lib and use in mvp `API` actix.
+1. use same lib as wasm in app.
+1. polymorphic: trait objects and generics, orphan rule.
+1. rust design pattern.
+1. `solana`: read account, `pyth`
+1. release, profile.
 
 ## R1
 
-1. mutex.
-1. macro.
+> Integrate with other, Security, Speed, Prod, CI/CD // Able to use advance lib, deploy.
+
+1. `Mutex`, `Ref`, `RefCell`, `MutexGuard`, `OnceCell`.
+1. `Fn`, `FnMut`, `FnOnce`.
+1. macro, expand.
+1. bench, optimize, `watt`.
+1. extern, unsafe.
 1. `solana`: read/write `counter`, cpi.
 1. `anchor`: read `tulip`, `friktion`.
 1. `tensorflow`.
+1. deploy: docker, `cloud run`, multi-stage, build caching.
+1. deploy: github page, github action.
+1. `wasm-rpc`, rpc blocking/non-blocking, vanilla, lite, playground.
+1. `serde_wasm_bindgen`, `gloo`
 
 ## Review
 
