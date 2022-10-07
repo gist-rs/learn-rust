@@ -66,7 +66,7 @@
 
 ## R2
 
-> Advance lib, Serve API, Consume as web // Able to create lib
+> Advance lib, Serve API, Consume as web // Able to create lib, wasm
 
 1. rc, arc, refcall, heap, stack.
 1. future, `spawn_local`, `serde_wasm_bindgen` getter/setter, `IntoWasmAbi`, `FromWasmAbi`.
@@ -80,6 +80,7 @@
 1. rust design pattern.
 1. `solana`: read account, `pyth`
 1. release, profile.
+1. `serde_wasm_bindgen`, `gloo`, `#[wasm_bindgen(getter_with_clone)]`
 
 ## R1
 
@@ -96,30 +97,11 @@
 1. deploy: docker, `cloud run`, multi-stage, build caching.
 1. deploy: github page, github action.
 1. `wasm-rpc`, rpc blocking/non-blocking, vanilla, lite, playground.
-1. `serde_wasm_bindgen`, `gloo`
 
-## Review
+## Extras
 
 1. 📚 A half-hour to `READ` Rust: https://fasterthanli.me/articles/a-half-hour-to-learn-rust
 1. 🎮 Explore rust with playground: https://tourofrust.com/
 1. 📚 Easier to read compare with doc: https://dhghomon.github.io/easy_rust/Chapter_1.html
 1. 🎮 Fill in the blank quiz: https://github.com/sunface/rust-by-practice
 1. 🎮 Feel like fixing bugs: https://github.com/rust-lang/rustlings
-
-## Path
-
-```mermaid
-graph LR;
- subgraph Options
- Option-->pod1["None"];
- Option-->pod2["Some(T)"];
- end
-```
-
-```mermaid
-graph LR;
- subgraph Results
- Result-->pod1["Ok()"];
- Result-->pod2["Err(Error)"];
- end
-```
