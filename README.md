@@ -24,52 +24,64 @@
 
 ## R5
 
-> Basic main, focus on simple and straight forward. // Able to familiar with basic logic
+> Basic main, focus on simple and straight forward. // Able to hello, condition, loop
 
 1. variable: str, slice,`string`, `vec`, `usize`, ref, `mut`.
 1. Structs
 1. #[derive(Copy, Clone, Debug, PartialEq)]
 1. method: `fn`, `println`, `json`, `serde`, closures.
 1. condition: `if`, `match`, `if let`, match guards.
-1. Flow of Control: `while`, `loop`, `for`, `range`, `iter`, `map`, `filter`, `collect`.
+1. Flow of Control: `while`, `loop`, `for`, `range`, `iter`, `map`, `filter`, `collect`, `rev`, `chain`, `inspect`, `clone` , `copied`.
+1. find, rfind, find_map, collect.
+1. Vec: first, last, get, first_mut, last_mut, to_vec, len, is_empty, with_capacity, capacity, push, pop, insert, remove, resize, resize_with, truncate, clear, extend, split_off, append, drain, retain, dedup, dedup_by, dedup_by_key, concat, join, .
 1. conversions: `as`, `as_str`, `to_string`, `From`, `into`, `try_into`, `unwrap`/`?`.
 1. error: concept, `panic`, `expect`, `handling`, `anyhow`(main).
 1. test, assert!.
 
 ## R4
 
-> Advance main, focus on complex, combine, compose // Able to create todo-mvc app.
+> Advance main, focus on complex, combine, compose // Able to create basic app + lib.
 
-1. variable: `OsString`, `OsStr`, `tuples`, `hashmap`, `bigint`, decimals, `lazy_static`.
+1. variable: `OsString`, `OsStr`, `tuples`, `bigint`, decimals, `lazy_static`.
 1. Generic Structs.
 1. #[repr(C)],`trait`, `imp`.
 1. method: derive, cast with `enum`, `serde`, `borsh`,
 1. condition: match, `enum`, `strum`.
-1. Flow of Control: `enumerate`, `into_iter`, `filter_map`, `flat_map`, `fold`. // Happy case
+1. Flow of Control: `enumerate`, `into_iter`, `filter_map`, `flat_map`, `flatten`. // Happy case
+1. Iterator: `fold`,`rfold`,`try_fold`, `try_rfold`, `nth`, `nth_back`, `last`
+1. Simple Accumulation: count, sum, product,max, min, max_by, min_by, max_by_key, min_by_key
 1. conversions: `to_owned`, `as_ref`, down casting.
 1. error: handling loop error, `thiserror`(lib).
 1. doc test, cfg(test), allow, feature, package, version.
+1. read_line, write, write_all, flush, seek, stdin, stdout.
 
 ## R3
 
-> Basic lib, Serve cli, focus on app, use existing lib. // Able to use app+ simple lib
+> Basic lib, Serve cli, focus on app, use existing lib. // Able to create async app + advance lib
 
+1. HashSet, BTreeSet, LinkedList, HashMap, BTreeMap.
 1. `CStr`, `CString`, lifetime, `box`, `dyn`, `const`, `regex`.
+1. `take`, `take_while`, `skip`, `skip_while`, `peekable`, `fuse`, `zip`, `by_ref`.
+1. Iterator: eq, ne, lt, le, gt, any, all, position, rposition, and ExactSizeIterator.
+1. entry, or_insert, or_insert_with, and_modify.
+1. extends, partition, for_each and try_for_each.
 1. custom struct, module, `Value`, `JsValue`, `JsError`
 1. Binding with @ Patterns,
-1. async: fetch via `reqwest`, `tokio`.
+1. sync_std::task::block_on.
+1. async: fetch via `reqwest`, `tokio` test.
 1. error: custom error, `map_err`. // Failed case
-1. cli `clap`.
+1. cli `clap`, `StructOpt`.
 1. mvp `TODO-MVC`, `yew`, `trunk`.
 1. wasm worker,`cloudflare`, `vanilla-rpc`, `agora-rpc`.
 1. use-web-wasm: `wasm-bindgen`, via `firebase`.
+1. connect db.
 
 ## R2
 
 > Advance lib, Serve API, Consume as web // Able to create lib, wasm
 
 1. rc, arc, refcall, heap, stack.
-1. future, `spawn_local`, `serde_wasm_bindgen` getter/setter, `IntoWasmAbi`, `FromWasmAbi`.
+1. thread::spawn, join, future, `spawn_local`, `serde_wasm_bindgen` getter/setter, `IntoWasmAbi`, `FromWasmAbi`.
 1. Subtraits, Type-Associated Functions, Traits That Define Relationships Between Types,
 1. Associated types, Generic Traits , impl Trait, Associated Consts.
 1. Structs with Lifetime Parameters.
@@ -81,22 +93,31 @@
 1. `solana`: read account, `pyth`
 1. release, profile.
 1. `serde_wasm_bindgen`, `gloo`, `#[wasm_bindgen(getter_with_clone)]`
+1. `Ranyon`.
 
 ## R1
 
 > Integrate with other, Security, Speed, Prod, CI/CD // Able to use advance lib, deploy.
 
 1. `Mutex`, `Ref`, `RefCell`, `MutexGuard`, `OnceCell`.
+1. `VecDeque`, `BinaryHeap`.
+1. Cow.
+1. macro_rules.
 1. `Fn`, `FnMut`, `FnOnce`.
+1. type state: https://yoric.github.io/post/rust-typestate/
 1. macro, expand.
 1. bench, optimize, `watt`.
-1. extern, unsafe.
+1. extern.
 1. `solana`: read/write `counter`, cpi.
 1. `anchor`: read `tulip`, `friktion`.
 1. `tensorflow`.
 1. deploy: docker, `cloud run`, multi-stage, build caching.
 1. deploy: github page, github action.
 1. `wasm-rpc`, rpc blocking/non-blocking, vanilla, lite, playground.
+1. OS-specific functionality. `#[cfg(target_os = "macos")]`
+1. thread::spawn
+1. unsafe.
+1. foreign function interface (FFI)
 
 ## Extras
 
