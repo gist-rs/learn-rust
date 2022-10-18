@@ -93,7 +93,6 @@
 1. `solana`: read account, `pyth`
 1. release, profile.
 1. `serde_wasm_bindgen`, `gloo`, `#[wasm_bindgen(getter_with_clone)]`
-1. `Ranyon`.
 
 ## R1
 
@@ -118,6 +117,7 @@
 1. thread::spawn
 1. unsafe.
 1. foreign function interface (FFI)
+1. cargo bench, [Continuous Benchmark](https://github.com/marketplace/actions/continuous-benchmark)
 
 ## Extras
 
