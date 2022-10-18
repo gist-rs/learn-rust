@@ -26,9 +26,16 @@ fn example_format() {
     println!("foobar = {foobar}");
 }
 
-// Greet function
 fn greet(target: String) {
     println!("Hello, {}", target); //🐥 console.log(`Hello, ${target}`);
+}
+
+fn example_to_owned_vs_clone() {
+    fn foo() -> String {
+        "bar".clone() ///⭕️ "bar".to_owned()
+        //❌ expected struct `String`, found `&str`
+    }
+    println!("{:?}", foo());
 }
 
 fn main() {
@@ -36,4 +43,5 @@ fn main() {
     example_to_string();
     example_into();
     example_format();
+    example_to_owned_vs_clone();
 }
