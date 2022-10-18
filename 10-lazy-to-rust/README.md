@@ -49,3 +49,10 @@ let z: u32 = (5000_u64).try_into().expect("Conversion error");
 - [ ] reference cycle using `Rc`.// `Rc` and `RefCell` create a dynamic garbage collection structure
 - [ ] `Arc`, which is an atomic reference-counted smart pointer + thread-safe access.
 - [ ] Generic Type/ Method overload
+
+## Rust Anatomy
+
+- cargo: single, workspace
+- dependency: dev, release
+- app, lib
+- use, mod
