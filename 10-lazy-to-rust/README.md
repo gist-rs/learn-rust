@@ -56,3 +56,27 @@ let z: u32 = (5000_u64).try_into().expect("Conversion error");
 - dependency: dev, release
 - app, lib
 - use, mod
+
+## Rust Why?
+
+- Google:
+  - https://www.youtube.com/watch?v=Gnp4XP1b82E
+- Microsoft:
+  - https://www.youtube.com/watch?v=1uAsA1hm52I
+  - https://twitter.com/markrussinovich/status/1571995117233504257
+- Apple:
+  - https://jobs.apple.com/en-us/search?search=rust&sort=relevance
+- Facebook:
+  - https://engineering.fb.com/2021/04/29/developer-tools/rust/
+- AWS:
+  - https://aws.amazon.com/blogs/opensource/sustainability-with-rust/
+
+## Rust Journey
+
+- Programming Rust, 2nd Edition by Jim Blandy, Jason Orendorff, Leonora F. S. Tindall: https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/
+  > Learn by errors, In deep take a look in memory, compare to C/C++, Python, used by [standford](https://web.stanford.edu/class/cs110l/handouts/course-information/)
+- The Rust Programming Language (Covers Rust 2018) by Steve Klabnik and Carol Nichols: https://nostarch.com/Rust2018
+  > Learn by why we need this fn, good for newbies.
+- Rust for Rustaceans by Jon Gjengset: https://rust-for-rustaceans.com/
+  > A sequel from `The Rust Programming Language`.
+-
