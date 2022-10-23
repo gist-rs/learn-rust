@@ -37,6 +37,7 @@
 1. conversions: `as`, `as_str`, `to_string`, `From`, `into`, `try_into`, `unwrap`/`?`.
 1. error: concept, `panic`, `expect`, `handling`, `anyhow`(main).
 1. test, assert!.
+1. Option, Result, `ok_or_else`.
 
 ## R4
 
