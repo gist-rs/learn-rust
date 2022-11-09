@@ -23,10 +23,7 @@ pub async fn fetch_multiple_jsvalue() -> Result<JsValue, JsError> {
     let mut errors = vec![];
     let value = results
         .into_iter()
-        .filter_map(|e| {
-            e.map_err(|err| errors.push(err.to_string().to_owned()))
-                .ok()
-        })
+        .filter_map(|e| e.map_err(|err| errors.push(err.to_string())).ok())
         .collect::<Vec<_>>();
 
     match errors.len() {
@@ -78,7 +75,7 @@ mod test {
     async fn test_fetch_multiple() {
         let results = fetch_multiple().await;
         println!("{:#?}", results);
-        assert!(results.len() > 0)
+        assert!(!results.is_empty())
     }
 
     use super::fetch_multiple_value;
@@ -87,6 +84,6 @@ mod test {
     async fn test_fetch_multiple_value() {
         let results = fetch_multiple_value().await;
         println!("{:#?}", results);
-        assert!(results.unwrap().len() > 0)
+        assert!(!results.unwrap().is_empty())
     }
 }
