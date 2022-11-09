@@ -70,6 +70,8 @@ let z: u32 = (5000_u64).try_into().expect("Conversion error");
   - https://engineering.fb.com/2021/04/29/developer-tools/rust/
 - AWS:
   - https://aws.amazon.com/blogs/opensource/sustainability-with-rust/
+- Android:
+  - https://source.android.com/docs/setup/build/rust/building-rust-modules/overview
 
 ## Rust Journey
 
