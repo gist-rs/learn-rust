@@ -87,3 +87,20 @@ mod test {
         assert!(!results.unwrap().is_empty())
     }
 }
+
+// TODO
+// Compare to tokio
+// get tulip leverage info
+// let tasks = whitelist_leveraged_farms.iter().map(|e| {
+//     task::spawn(
+// let resp = client.get(url).send().await?;
+// resp.bytes())
+// });
+
+// let mut pool_infos = vec![];
+
+// for task in tasks {
+//     let result = task.await;
+//     pool_infos.push(result);
+// }
+// Compare to prokio
